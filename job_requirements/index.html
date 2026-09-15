@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG Gallery Grid</title>
+    <style>
+        :root {
+            --thumb-size: 200px;
+            --bg-color: #121214;
+            --card-bg: #202024;
+            --text-color: #e1e1e6;
+            --accent: #8257e5;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 24px;
+        }
+        header {
+            margin-bottom: 24px;
+            border-bottom: 1px solid #323238;
+            padding-bottom: 12px;
+        }
+        h1 { font-size: 1.25rem; font-weight: 600; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(var(--thumb-size), 1fr));
+            gap: 16px;
+        }
+        .thumb-card a {
+            display: flex;
+            flex-direction: column;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #323238;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }
+        .thumb-card a:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+        .img-wrapper {
+            width: 100%;
+            height: var(--thumb-size);
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .label {
+            padding: 8px 10px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TI - Requisitos por Papel</h1>
+    </header>
+    <main class="grid">
+        
+            <div class="thumb-card">
+                <a href="administrador_de_banco_de_dados.png" target="_blank" rel="noopener noreferrer" title="administrador_de_banco_de_dados">
+                    <div class="img-wrapper">
+                        <img src="administrador_de_banco_de_dados.png" alt="administrador_de_banco_de_dados" loading="lazy" />
+                    </div>
+                    <span class="label">administrador_de_banco_de_dados</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="arquiteto_cloud.png" target="_blank" rel="noopener noreferrer" title="arquiteto_cloud">
+                    <div class="img-wrapper">
+                        <img src="arquiteto_cloud.png" alt="arquiteto_cloud" loading="lazy" />
+                    </div>
+                    <span class="label">arquiteto_cloud</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="data_&_ai.png" target="_blank" rel="noopener noreferrer" title="data_&amp;_ai">
+                    <div class="img-wrapper">
+                        <img src="data_&_ai.png" alt="data_&amp;_ai" loading="lazy" />
+                    </div>
+                    <span class="label">data_&amp;_ai</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="developer.png" target="_blank" rel="noopener noreferrer" title="developer">
+                    <div class="img-wrapper">
+                        <img src="developer.png" alt="developer" loading="lazy" />
+                    </div>
+                    <span class="label">developer</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="engenheiro_de_tecnologia_da_informacao.png" target="_blank" rel="noopener noreferrer" title="engenheiro_de_tecnologia_da_informacao">
+                    <div class="img-wrapper">
+                        <img src="engenheiro_de_tecnologia_da_informacao.png" alt="engenheiro_de_tecnologia_da_informacao" loading="lazy" />
+                    </div>
+                    <span class="label">engenheiro_de_tecnologia_da_informacao</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="enterprise_agile_coach.png" target="_blank" rel="noopener noreferrer" title="enterprise_agile_coach">
+                    <div class="img-wrapper">
+                        <img src="enterprise_agile_coach.png" alt="enterprise_agile_coach" loading="lazy" />
+                    </div>
+                    <span class="label">enterprise_agile_coach</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="gerente_de_produtos.png" target="_blank" rel="noopener noreferrer" title="gerente_de_produtos">
+                    <div class="img-wrapper">
+                        <img src="gerente_de_produtos.png" alt="gerente_de_produtos" loading="lazy" />
+                    </div>
+                    <span class="label">gerente_de_produtos</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="gerente_de_projetos.png" target="_blank" rel="noopener noreferrer" title="gerente_de_projetos">
+                    <div class="img-wrapper">
+                        <img src="gerente_de_projetos.png" alt="gerente_de_projetos" loading="lazy" />
+                    </div>
+                    <span class="label">gerente_de_projetos</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="solutions_architect.png" target="_blank" rel="noopener noreferrer" title="solutions_architect">
+                    <div class="img-wrapper">
+                        <img src="solutions_architect.png" alt="solutions_architect" loading="lazy" />
+                    </div>
+                    <span class="label">solutions_architect</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="sre.png" target="_blank" rel="noopener noreferrer" title="sre">
+                    <div class="img-wrapper">
+                        <img src="sre.png" alt="sre" loading="lazy" />
+                    </div>
+                    <span class="label">sre</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="tech_lead.png" target="_blank" rel="noopener noreferrer" title="tech_lead">
+                    <div class="img-wrapper">
+                        <img src="tech_lead.png" alt="tech_lead" loading="lazy" />
+                    </div>
+                    <span class="label">tech_lead</span>
+                </a>
+            </div>
+            
+
+            <div class="thumb-card">
+                <a href="transformation_manager.png" target="_blank" rel="noopener noreferrer" title="transformation_manager">
+                    <div class="img-wrapper">
+                        <img src="transformation_manager.png" alt="transformation_manager" loading="lazy" />
+                    </div>
+                    <span class="label">transformation_manager</span>
+                </a>
+            </div>
+            
+    </main>
+</body>
+</html>
